@@ -54,9 +54,10 @@ function App() {
 
   return (
     <div className="App">
-      {user.isSignIn ? <button onClick ={handleSignOut}> Sign out</button> : <button onClick ={handleSignIn}> Sign in</button>
+      {
+        user.isSignIn ? <button onClick ={handleSignOut}> Sign out</button> : <button onClick ={handleSignIn}> Sign in</button>
+      }
 
-        }
       {
         user.isSignIn && <div>
           <p>Welcome {user.name}</p>
